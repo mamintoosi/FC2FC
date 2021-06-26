@@ -14,7 +14,7 @@ import tensorflow as tf
 # from keras.models import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
 from tensorflow import keras
 from tensorflow.keras import layers
-from tensorflow.keras import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
+from tensorflow.keras.layers import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
 
 def seq_model(inputSize):
     model = tf.keras.Sequential(name="seqModel")
