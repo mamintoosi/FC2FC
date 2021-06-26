@@ -17,7 +17,7 @@ from tensorflow.keras import layers
 from tensorflow.keras import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
 
 def seq_model(inputSize):
-    model = Sequential(name="seqModel")
+    model = tf.keras.Sequential(name="seqModel")
     model.add(Conv2D(32, (3, 3), activation='relu',
                             input_shape=(inputSize, inputSize, 1), name="Conv1"))
     model.add(MaxPooling2D((2, 2), name="MaxPool1"))
