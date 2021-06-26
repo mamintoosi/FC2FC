@@ -12,7 +12,7 @@ from keras import models
 from keras import optimizers
 import tensorflow as tf
 # from keras.models import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
-from tensorflow.keras.models import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
+from tensorflow.keras import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
 
 def seq_model(inputSize):
     model = Sequential(name="seqModel")
