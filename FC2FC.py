@@ -72,7 +72,7 @@ def convert_model(model,mdl,inputImSize):
     converted model
 
     """    
-    convModel = tf.keras.Sequential(name="FullyConv")
+    convModel = models.Sequential(name="FullyConv")
     convModel.add(layers.Conv2D(32, (3, 3), activation='relu',
                             input_shape=(inputImSize, inputImSize, 3), name="Conv1"))
     convModel.add(layers.MaxPooling2D((2, 2), name="MaxPool1"))
