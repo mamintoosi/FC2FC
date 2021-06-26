@@ -25,7 +25,7 @@ from keras.layers import *
 
 
 def seq_model(inputSize):
-    model = tf.keras.Sequential()
+    model = models.Sequential()
     model.add(Conv2D(32, (3, 3), activation='relu', name="Conv1",
                             input_shape=(inputSize, inputSize, 3)))
     model.add(MaxPooling2D((2, 2)))
