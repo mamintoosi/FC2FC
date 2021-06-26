@@ -26,22 +26,22 @@ from keras.layers import *
 
 def seq_model(inputSize):
     model = models.Sequential()
-    model.add(Conv2D(32, (3, 3), activation='relu', name="Conv1",
+    model.add(layers.Conv2D(32, (3, 3), activation='relu', name="Conv1",
                             input_shape=(inputSize, inputSize, 3)))
-    model.add(MaxPooling2D((2, 2)))
-    model.add(Conv2D(64, (3, 3), activation='relu', name="Conv2"))
-    model.add(MaxPooling2D((2, 2)))
-    model.add(Conv2D(128, (3, 3), activation='relu', name="Conv3"))
-    model.add(MaxPooling2D((2, 2)))
-    model.add(Conv2D(128, (3, 3), activation='relu', name="Conv4"))
-    model.add(MaxPooling2D((2, 2)))
-    model.add(Conv2D(256, (3, 3), activation='relu', name="Conv5"))
-    model.add(Conv2D(512, (3, 3), activation='relu', name="Conv6"))
-    model.add(MaxPooling2D((2, 2)))
-    model.add(Flatten())
+    model.add(layers.MaxPooling2D((2, 2)))
+    model.add(layers.Conv2D(64, (3, 3), activation='relu', name="Conv2"))
+    model.add(layers.MaxPooling2D((2, 2)))
+    model.add(layers.Conv2D(128, (3, 3), activation='relu', name="Conv3"))
+    model.add(layers.MaxPooling2D((2, 2)))
+    model.add(layers.Conv2D(128, (3, 3), activation='relu', name="Conv4"))
+    model.add(layers.MaxPooling2D((2, 2)))
+    model.add(layers.Conv2D(256, (3, 3), activation='relu', name="Conv5"))
+    model.add(layers.Conv2D(512, (3, 3), activation='relu', name="Conv6"))
+    model.add(layers.MaxPooling2D((2, 2)))
+    model.add(layers.Flatten())
     # model.add(Dropout(0.5))
     # model.add(Dense(512, activation='relu'))
-    model.add(Dense(1, activation='sigmoid'))
+    model.add(layers.Dense(1, activation='sigmoid'))
     return model
 
 # setting FC weights to the final convolutional layer
