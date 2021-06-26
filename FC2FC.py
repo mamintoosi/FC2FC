@@ -6,15 +6,23 @@
 #    BSD license.
 """Functions for converting a Fully Connected Layer to Fully Convolutional Layer in TF"""
 
-# import keras
-# from keras import layers
-# from keras import models
-# from keras import optimizers
+# # import keras
+# # from keras import layers
+# # from keras import models
+# # from keras import optimizers
+# import tensorflow as tf
+# # from keras.models import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
+# from tensorflow import keras
+# # from tensorflow.keras import layers
+# from tensorflow.keras.layers import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
+import keras
+from keras import layers
+from keras import models
+from keras import optimizers
+# This is module with image preprocessing utilities
 import tensorflow as tf
-# from keras.models import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
-from tensorflow import keras
-# from tensorflow.keras import layers
-from tensorflow.keras.layers import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
+from keras.layers import *
+
 
 def seq_model(inputSize):
     model = tf.keras.Sequential(name="seqModel")
