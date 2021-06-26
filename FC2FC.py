@@ -57,7 +57,7 @@ def set_conv_weights(conv_model, feature_extractor):
     conv_model.get_layer(name="lastConv").set_weights(weights_list)
 
 # Convert Model
-def convert_model(model,mdl,inputImSize):
+def convert_model(model,mdl,inputSize):
     """
     Convert FC2FC
 
@@ -74,7 +74,7 @@ def convert_model(model,mdl,inputImSize):
     """    
     convModel = models.Sequential(name="FullyConv")
     convModel.add(layers.Conv2D(32, (3, 3), activation='relu',
-                            input_shape=(inputImSize, inputImSize, 3), name="Conv1"))
+                            input_shape=(inputSize[0], inputSize[1], 3), name="Conv1"))
     convModel.add(layers.MaxPooling2D((2, 2), name="MaxPool1"))
     convModel.add(layers.Conv2D(64, (3, 3), activation='relu', name="Conv2"))
     convModel.add(layers.MaxPooling2D((2, 2), name="MaxPool2"))
