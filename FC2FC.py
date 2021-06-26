@@ -11,19 +11,20 @@ from keras import layers
 from keras import models
 from keras import optimizers
 import tensorflow as tf
-from keras.models import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
+# from keras.models import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
+from tensorflow.keras.models import *
 
 def seq_model(inputSize):
-    model = keras.models.Sequential(name="seqModel")
-    model.add(keras.models.Conv2D(32, (3, 3), activation='relu',
+    model = Sequential(name="seqModel")
+    model.add(Conv2D(32, (3, 3), activation='relu',
                             input_shape=(inputSize, inputSize, 1), name="Conv1"))
-    model.add(keras.models.MaxPooling2D((2, 2), name="MaxPool1"))
-    model.add(keras.models.Conv2D(64, (3, 3), activation='relu', name="Conv2"))
-    model.add(keras.models.MaxPooling2D((2, 2), name="MaxPool2"))
-    model.add(keras.models.Conv2D(128, (3, 3), activation='relu', name="Conv3"))
-    model.add(keras.models.MaxPooling2D((2, 2), name="MaxPool3"))
-    model.add(keras.models.Flatten(name="Flatten1"))
-    model.add(keras.models.Dense(10, activation='softmax', name="Dense1"))
+    model.add(MaxPooling2D((2, 2), name="MaxPool1"))
+    model.add(Conv2D(64, (3, 3), activation='relu', name="Conv2"))
+    model.add(MaxPooling2D((2, 2), name="MaxPool2"))
+    model.add(Conv2D(128, (3, 3), activation='relu', name="Conv3"))
+    model.add(MaxPooling2D((2, 2), name="MaxPool3"))
+    model.add(Flatten(name="Flatten1"))
+    model.add(Dense(10, activation='softmax', name="Dense1"))
     return model
 
 # setting FC weights to the final convolutional layer
