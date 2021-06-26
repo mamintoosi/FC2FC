@@ -94,6 +94,9 @@ def convert_model(model,mdl,inputSize):
     # convModel.add(layers.Dense(1, activation='sigmoid', name="Dense2"))
 
     convModel.add(layers.Conv2D(1, (1, 1), activation='sigmoid', name="lastConv"))
+
+    convModel.load_weights(mdl,by_name=True)
+    set_conv_weights(convModel,model)
     return convModel
 
 def seq_model_hoda(inputSize):
