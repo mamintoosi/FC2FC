@@ -3,18 +3,9 @@
 #    Copyright (C) 2021-2029 by
 #    Mahmood Amintoosi <m.amintoosi@gmail.com>
 #    All rights reserved.
-#    BSD license.
+#    MIT license.
 """Functions for converting a Fully Connected Layer to Fully Convolutional Layer in TF"""
 
-# # import keras
-# # from keras import layers
-# # from keras import models
-# # from keras import optimizers
-# import tensorflow as tf
-# # from keras.models import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
-# from tensorflow import keras
-# # from tensorflow.keras import layers
-# from tensorflow.keras.layers import Sequential, Conv2D, MaxPooling2D, Flatten, Dense
 import keras
 from keras import layers
 from keras import models
@@ -39,8 +30,6 @@ def seq_model(inputSize):
     model.add(layers.Conv2D(512, (3, 3), activation='relu', name="Conv6"))
     model.add(layers.MaxPooling2D((2, 2)))
     model.add(layers.Flatten())
-    # model.add(Dropout(0.5))
-    # model.add(Dense(512, activation='relu'))
     model.add(layers.Dense(1, activation='sigmoid'))
     return model
 
@@ -82,17 +71,9 @@ def convert_model(model,mdl,inputSize):
     convModel.add(layers.MaxPooling2D((2, 2), name="MaxPool3"))
     convModel.add(layers.Conv2D(128, (3, 3), activation='relu', name="Conv4"))
     convModel.add(layers.MaxPooling2D((2, 2), name="MaxPool4"))
-    # convModel.add(layers.Flatten(name="Flatten1"))
-    # convModel.add(layers.Dropout(0.5, name="Dropout1"))
-    # convModel.add(layers.Dense(512, activation='relu', name="Dense1"))
-    # convModel.add(layers.Dense(1, activation='sigmoid', name="Dense2"))
     convModel.add(layers.Conv2D(256, (3, 3), activation='relu', name="Conv5"))
     convModel.add(layers.Conv2D(512, (3, 3), activation='relu', name="Conv6"))
     convModel.add(layers.MaxPooling2D((2, 2), name="MaxPool5"))
-
-    # convModel.add(layers.Flatten(name="Flatten1"))
-    # convModel.add(layers.Dense(1, activation='sigmoid', name="Dense2"))
-
     convModel.add(layers.Conv2D(1, (1, 1), activation='sigmoid', name="lastConv"))
 
     convModel.load_weights(mdl,by_name=True)
