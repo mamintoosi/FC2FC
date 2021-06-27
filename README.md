@@ -49,6 +49,7 @@ https://colab.research.google.com/github/mamintoosi/FC2FC/blob/main/FC2FC_Callig
 <td><img src="images/cal_map.png" width="300"> </td>
 </tr>
 </table>
+
 ### مجموعه دادگان شناسایی برگ‌های سالم و بیمار درخت سیب
 از لینک زیر می‌توانید برنامه مربوط به این مجموعه دادگان را اجرا کنید
 </div>
