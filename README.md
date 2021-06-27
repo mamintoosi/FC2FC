@@ -28,7 +28,7 @@ M. Amintoosi, m.amintoosi at gmail.com
 برای هر یک از مجموعه دادگان مورد استفاده در مقاله یک فایل ژوپیترنوت بوک آماده شده است که قابل اجرا بر روی گوگل کولب است.
 همه عملیات روی سرورهای گوگل انجام می‌شود.
 
-### مجموعه دادگان تابلونگار‌ّه‌های رسم‌الخطهای شکسته نستعلیق و ثلث
+### مجموعه دادگان تابلونگار‌ه‌های رسم‌الخطهای شکسته نستعلیق و ثلث
 از لینک زیر می‌توانید برنامه مربوط به این مجموعه دادگان را اجرا کنید
 </div>
 https://colab.research.google.com/github/mamintoosi/FC2FC/blob/main/FC2FC_Calligraphy.ipynb
@@ -42,12 +42,36 @@ https://colab.research.google.com/github/mamintoosi/FC2FC/blob/main/FC2FC_Callig
 <td><img src="images/cal_cm.png" width="300"> </td>
 </tr>
 </table>
-خروجی‌های مربوط به این مجموعه دادگان
+خروجی‌های مربوط به این مجموعه دادگان (توضیح در متن مقاله)
 <table>
 <tr> 
-<td><img src="images/cal_out01.png" width="400"> </td>
-<td><img src="images/cal_map.png" width="200"> </td>
+<td><img src="images/cal_out01.png" width="300"> </td>
+<td><img src="images/cal_map.png" width="300"> </td>
+</tr>
+</table>
+### مجموعه دادگان شناسایی برگ‌های سالم و بیمار درخت سیب
+از لینک زیر می‌توانید برنامه مربوط به این مجموعه دادگان را اجرا کنید
+</div>
+https://colab.research.google.com/github/mamintoosi/FC2FC/blob/main/FC2FC_PlantDisease.ipynb
+<div dir="rtl">
+برای هر مجموعه داده و برای هر مدل
+نمودارهای 
+مقدار تابع هزینه برای داده‌های آموزشی و اعتبارسنجی و همچنین ماتریس درهم‌ریختگی حاصل از تست مدل بر روی داده‌های آزمون نمایش داده می‌شود.
+<table>
+<tr> 
+<td><img src="images/plant_loss.png" width="300"> </td>
+<td><img src="images/plant_cm.png" width="300"> </td>
+</tr>
+</table>
+خروجی‌های مربوط به این مجموعه دادگان (توضیح در متن مقاله)
+<table>
+<tr> 
+<td><img src="images/plant_out01.png" width="300"> </td>
+<td><img src="images/plant_map.png" width="300"> </td>
 </tr>
 </table>
 
+### مجموعه دادگان ارقام دست‌نویس فارسی
+از لینک زیر می‌توانید برنامه مربوط به این مجموعه دادگان را اجرا کنید
 </div>
+https://colab.research.google.com/github/mamintoosi/FC2FC/blob/main/FC2FC_Hoda.ipynb
