@@ -6,6 +6,8 @@
 #    MIT license.
 """Functions for converting a Fully Connected Layer to Fully Convolutional Layer in TF"""
 
+# The main idea is borrowed from: https://learnopencv.com/cnn-fully-convolutional-image-classification-with-tensorflow/
+
 import keras
 from keras import layers
 from keras import models
