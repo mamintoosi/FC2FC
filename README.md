@@ -5,7 +5,7 @@ M. Amintoosi, m.amintoosi at gmail.com
 کد مربوط به مقاله ارسالی با عنوان:
 
 ## تمام متصل به تمام پیچشی: پلی به گذشته
-<a href="https://github.com/mamintoosi/FC2FC/raw/main/Manuscript_01.pdf"> نسخه‌ی با حجم ۵ مگابایت </a> 
+<a href="https://github.com/mamintoosi/FC2FC/raw/main/Manuscript_01.pdf"> نسخه‌ی با حجم ۵ مگابایت </a> - 
 <a href="https://github.com/mamintoosi/FC2FC/raw/main/Manuscript_02.pdf"> نسخه‌ی flat با حجم ۱۳ مگابایت </a>
 
 ### چکیده
