@@ -18,7 +18,7 @@ M. Amintoosi, m.amintoosi at gmail.com
     title = {تمام متصل به تمام پیچشی: پلی به گذشته},
     journal = {نشریه رایانش نرم و فناوری اطلاعات },
     year = {1401},
-    note = {پذیرفته شده}}
+    note = {پذیرفته شده، آماده انتشار}}
 ```
 
 <div dir="rtl">
@@ -33,6 +33,10 @@ M. Amintoosi, m.amintoosi at gmail.com
 -
 <a href="https://github.com/mamintoosi/FC2FC/raw/main/Manuscript_04_final.pdf">
  نسخه‌ی نهایی (با ورد)
+ </a>
+ -
+ <a href="http://www.jscit.nit.ac.ir/article_149453.html">
+ لینک به مجله
  </a>
 
 در ادامه برخی از تصاویر مقاله و کدهای مرتبط با آزمایشات مقاله ذکر شده است. همه‌ی برنامه‌ها **منبع باز** بوده و *لینک اجرا روی کولب* درج شده است که بدون نیاز به دانلود یا نصب، بتوان برنامه‌ها را در مرورگر اجرا نمود.
@@ -118,9 +122,9 @@ https://colab.research.google.com/github/mamintoosi/FC2FC/blob/main/Check_FC2FC_
 <div dir="rtl">
 عنوان مقاله مقتبس از نام کتاب 
 <a href="https://www.digikala.com/product/dkp-1155579/%DA%A9%D8%AA%D8%A7%D8%A8-%D8%AC%D8%A7%D8%AF%D9%87-%D8%A7%DB%8C-%D8%A8%D9%87-%DA%AF%D8%B0%D8%B4%D8%AA%D9%87-%D8%A7%D8%AB%D8%B1-%D8%A7%D9%84%D8%A7%D9%85%D9%85%D9%88%D9%86%D8%AA%DA%AF%D9%88%D9%85%D8%B1%DB%8C-%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA-%D9%82%D8%AF%DB%8C%D8%A7%D9%86%DB%8C/">
-«کتاب جاده‌ای به گذشته» 
+«جاده‌ای به گذشته» 
 </a>
-اثر ال.ام.مونتگومری بوده است.
+اثر ال.ام.مونتگومری (مؤلف مجموعه داستان‌های آن شرلی) بوده است.
 </div>
 <a href="https://lmmonline.org/the-road-to-yesterday/">
 The Road to Yesterday (L.M. Montgomery Books)
