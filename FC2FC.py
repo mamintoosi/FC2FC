@@ -12,7 +12,6 @@ import keras
 from keras import layers
 from keras import models
 from keras import optimizers
-# This is module with image preprocessing utilities
 import tensorflow as tf
 from keras.layers import *
 
@@ -37,7 +36,6 @@ def seq_model(inputSize):
 
 # setting FC weights to the final convolutional layer
 def set_conv_weights(conv_model, feature_extractor):
-    # get pre-trained ResNet50 FC weights
     dense_layer_weights = feature_extractor.layers[-1].get_weights()
     weights_list = [
         tf.reshape(
